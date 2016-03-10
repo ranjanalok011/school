@@ -40,11 +40,12 @@
                 <label>Session :</label>
                 <select class="form-control" tabindex="1" aria-hidden="true" name="session" id="session">
                   <option selected="selected" value="2016-17">2016-17</option>
-                </select>
+                </select><?php echo form_error('session');?>
               </div>
    				<div class="form-group">
                 <label>Registration No:</label>
                 <input type="text" class="form-control" name="reg_no" id="reg_no">
+				<?php echo form_error('reg_no');?>
               </div>
             </div>
             <div class="col-md-4">
@@ -53,20 +54,22 @@
                 <select class="form-control" tabindex="2" aria-hidden="true" name="class" id="class">
                   <option selected="selected" value="1">1</option>
                   <option value="2">2</option>
-                </select>
+                </select><?php echo form_error('class');?>
               </div>
               <div class="form-group">
                 <label>Date of Registration :</label>
                 <div class="input-group">
                   <div class="input-group-addon"> <i class="fa fa-calendar"></i> </div>
                   <input type="text" id="reg_date" name="reg_date" class="form-control pull-right active">
+				  <?php echo form_error('reg_date');?>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
 			<div class="form-group">
                       <label for="exampleInputFile">Photo :</label>
-                      <input type="file" name="photo" id="photo">                    
+                      <input type="file" name="photo" id="photo"> 
+					  <?php echo form_error('photo');?>                   
                     </div>
 			</div>
           </div>
@@ -93,26 +96,29 @@
                 <input type="radio" name="gender" class="flat-red" value="m">
                 Male </label>
                 <label>
-                <input type="radio" name="gender" class="flat-red" value="f">
+                <input type="radio" name="gender" class="flat-red" value="f">				
                 Female </label>
+				<?php echo form_error('gender');?>
               </div>
               <div class="form-group">
                 <label>Date of Birth :</label>
                 <div class="input-group">
                   <div class="input-group-addon"> <i class="fa fa-calendar"></i> </div>
                   <input type="text" id="dob" name="dob" class="form-control pull-right active">
+				  <?php echo form_error('dob');?>
                 </div>
               </div>
               <div class="form-group">
                 <label>Place of birth :</label>
                 <input type="text" class="form-control" name="place_of_bitrh" id="place_of_bitrh">
+				<?php echo form_error('place_of_bitrh');?>
               </div>
 			  <div class="form-group">
                 <label>Nationality :</label>
                 <select class="form-control" tabindex="2" aria-hidden="true" name="nation" id="nation">
                   <option selected="selected" value="1">Indian</option>
                   <option value="2">Others</option>
-                </select>
+                </select><?php echo form_error('nation');?>
               </div>
 			  <div class="form-group">
                 <label>Religion :</label>
@@ -121,7 +127,7 @@
                   <option value="2">Muslim</option>
 				  <option value="2">Sikkh</option>
 				  <option value="2">Isai</option>
-                </select>
+                </select><?php echo form_error('religion');?>
               </div>
 			  <div class="form-group">
                 <label>Category :</label>
@@ -130,15 +136,17 @@
                   <option value="2">BC</option>
 				  <option value="2">SC</option>
 				  <option value="2">ST</option>
-                </select>
+                </select><?php echo form_error('cat');?>
               </div>
 			  <div class="form-group">
                 <label>Unique ID No:</label>
                 <input type="text" class="form-control" name="uid" id="uid">
+				<?php echo form_error('uid');?>
               </div>
 			  <div class="form-group">
                 <label>BPL Number :</label>
                 <input type="text" class="form-control" name="bpl" id="bpl">
+				<?php echo form_error('bpl');?>
               </div>
             </div>
 			</div>
@@ -153,14 +161,17 @@
               <div class="form-group">
                 <label>Father's Name :</label>
                 <input type="text" class="form-control" name="f_name" id="f_name">
+				<?php echo form_error('f_name');?>
               </div>
               <div class="form-group">
                 <label>Father's Occupation :</label>
                 <input type="text" class="form-control" name="f_occupation" id="f_occupation">
+				<?php echo form_error('f_occupation');?>
               </div>
 			  <div class="form-group">
                 <label>Father's Qualification :</label>
                 <input type="text" class="form-control" name="f_qualification" id="f_qualification">
+				<?php echo form_error('f_qualification');?>
               </div>
 			  <div class="form-group">
                 <label>Father's E-mail ID :</label>
@@ -170,14 +181,17 @@
 			 <div class="form-group">
                 <label>Mother's Name :</label>
                 <input type="text" class="form-control" name="m_name" id="m_name">
+				<?php echo form_error('m_name');?>
               </div>
               <div class="form-group">
                 <label>Mother's Occupation :</label>
                 <input type="text" class="form-control" name="m_occupation" id="m_occupation">
+				<?php echo form_error('m_occupation');?>
               </div>
 			  <div class="form-group">
                 <label>Mother's Qualification :</label>
                 <input type="text" class="form-control" name="m_qualification" id="m_qualification">
+				<?php echo form_error('m_qualification');?>
               </div>
 			  <div class="form-group">
                 <label>Mother's E-mail ID :</label>
@@ -199,38 +213,46 @@
               <div class="form-group">
                 <label>Village :</label>
                 <input type="text" class="form-control" name="village" id="village">
+				<?php echo form_error('village');?>
               </div>
    				<div class="form-group">
                 <label>Post :</label>
                 <input type="text" class="form-control" name="post" id="post">
+				<?php echo form_error('post');?>
               </div>
 			  <div class="form-group">
                 <label>Via :</label>
                 <input type="text" class="form-control" name="via" id="via">
+				<?php echo form_error('via');?>
               </div>
             </div>
             <div class="col-md-4">
               <div class="form-group">
                 <label>Police Station :</label>
-                <input type="text" class="form-control" name="police_station" id="police_station">
+                <input type="text" class="form-control" name="police_station" id="district">
+				<?php echo form_error('district');?>
               </div>
               <div class="form-group">
                 <label>District :</label>
                 <input type="text" class="form-control" name="district" id="district">
+				<?php echo form_error('district');?>
               </div>
 			  <div class="form-group">
                 <label>State :</label>
                 <input type="text" class="form-control" name="state" id="state">
+				<?php echo form_error('state');?>
               </div>
             </div>
             <div class="col-md-4">
 			<div class="form-group">
                 <label>Country :</label>
                 <input type="text" class="form-control" name="country" id="country">
+				<?php echo form_error('country');?>
               </div>
 			  <div class="form-group">
                 <label>PIN :</label>
                 <input type="text" class="form-control" name="pin" id="pin">
+				<?php echo form_error('pin');?>
               </div>
 			  <div class="col-md-12">
 			<div class="box-footer">

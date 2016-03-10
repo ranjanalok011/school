@@ -25,7 +25,7 @@
         <section class="content">
 		<h3>Your form was successfully submitted!</h3>
 
-<p><?php echo anchor('form', 'Try it again!'); ?></p>
+<p><?php echo anchor('registration/view/add', 'Try it again!'); ?></p>
         </section>
       </div>
        <?php
